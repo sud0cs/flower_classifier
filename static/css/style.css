@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  background-color: #1e1e2e;
+}
+h1{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Press Start 2P";
+  color: #cba6f7;
+}
+form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+form *{
+  border: None;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  background-color: #313244;
+  outline: None;
+  color: #cdd6f4;
+  text-transform: uppercase;
+}
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+p{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f38ba8;
+  margin-top: 5%;
+  font-size: 20px;
+  font-family: "Press Start 2P";
+}
+p::before{
+  content: "predicted flower: ";
+  color: #89dceb;
+}

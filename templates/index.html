@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Predictor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <h1>Iris predictor</h1>
+    <form method="post">
+      {{form.model()}}
+      {{form.petal_width()}}
+      {{form.petal_length()}}
+      {{form.submit()}}
+    </form>
+    {% if result != "" %}
+      <p id="prediction">{{result}}</p>
+    {% endif %}
+  </body>
+</html>
